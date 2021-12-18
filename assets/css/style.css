@@ -1,0 +1,259 @@
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+    list-style: none;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 1.8rem;
+}
+
+img {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+h1 {
+    font-size: 2.6rem;
+    font-weight: 900;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
+.text-info {
+    color: #9bc0ff !important;
+}
+
+.text-light {
+    color: #fff !important;
+}
+
+.btn {
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+}
+
+.navbar-brand img {
+    height: 5rem;
+}
+
+.nav-item a:not(.btn) {
+    color: #fff !important;
+}
+
+.nav-item a:not(.btn):hover {
+    color: #9bc0ff !important;
+}
+
+.banner {
+    height: 100vh;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: calc(100vh - 87px); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+}
+
+.carousel-caption h5 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0d6efd;
+    letter-spacing: 0.5rem;
+}
+
+.carousel-caption p {
+    font-size: 25px;
+    font-weight: 700;
+    color: #cecece;
+    letter-spacing: 0.2rem;
+}
+
+.about {
+    padding: 6rem;
+}
+
+.about-text {
+    width: 75%;
+}
+
+.hover-box {
+    display: none !important;
+    opacity: 0.9;
+}
+
+.hover-box .btn {
+    background-color: transparent !important;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10rem;
+}
+
+.hover-box .btn:hover {
+    background-color: #fff !important;
+    color: #3693d6;
+}
+
+.work-item:hover .hover-box {
+    display: flex !important;
+}
+
+.work__image {
+    height: 40rem;
+    object-fit: cover;
+}
+
+.work__image_helf {
+    height: 19.5rem !important;
+}
+
+.testimonial {
+    padding-bottom: 7rem;
+}
+
+.testimonial .img-box {
+    width: 14rem;
+    margin: 0 auto 2rem;
+}
+
+.testimonial__content {
+    width: 25%;
+}
+
+.owl-carousel .active span {
+    background-color: #9bc0ff !important;
+}
+
+.owl-dots {
+    margin-top: 3rem;
+}
+
+.owl-prev,
+.owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.owl-prev {
+    left: 30%;
+}
+
+.owl-next {
+    right: 30%;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+    background-color: transparent !important;
+    color: #5392ff !important;
+}
+
+.owl-nav .disabled {
+    display: none !important;
+}
+
+.footer__logo-link img {
+    width: 13rem;
+    height: 5rem;
+}
+
+@media (max-width: 992px) {
+    html {
+        font-size: 9px;
+    }
+    .navbar-brand img {
+        height: 2rem;
+    }
+    .banner__title {
+        font-size: 7rem;
+    }
+    .about__text {
+        width: 90%;
+    }
+    .work__image,
+    .work__image_helf {
+        height: auto !important;
+    }
+    .testimonial__content {
+        width: 50%;
+    }
+    .owl-prev {
+        left: 10%;
+    }
+
+    .owl-next {
+        right: 10%;
+    }
+    .social-item img {
+        height: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 8.5px;
+    }
+    .banner__title {
+        font-size: 5rem;
+        width: 50%;
+    }
+    .about__text {
+        width: 70%;
+    }
+    .testimonial__content {
+        width: 60%;
+    }
+    .social-item img {
+        height: 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 8px;
+    }
+    .navbar-brand h1 {
+        display: none !important;
+    }
+    .banner__title {
+        font-size: 4rem;
+        width: 100%;
+    }
+    .about__text {
+        width: 50%;
+    }
+    .work-item__wrapper p {
+        display: none !important;
+    }
+    .work-item__wrapper h2 {
+        margin-bottom: 3rem;
+    }
+    .testimonial__content {
+        width: 90%;
+    }
+    .owl-prev,
+    .owl-next {
+        display: none !important;
+    }
+    .social-item img {
+        height: 2.5rem;
+    }
+}
