@@ -11,6 +11,7 @@ html {
 body {
     font-family: "Lato", sans-serif;
     font-size: 1.8rem;
+    background-color: #003c4d;
 }
 
 img {
@@ -30,6 +31,7 @@ h2 {
     font-size: 2rem;
     font-weight: 900;
 }
+
 .cursor-pointer {
     cursor: pointer !important;
 }
@@ -88,10 +90,16 @@ h2 {
 
 .about {
     padding: 6rem;
+    background-color: #002b3b;
 }
 
 .about-text {
     width: 75%;
+}
+
+.accordion-button {
+    background-color: #003c4d !important;
+    color: #fff !important;
 }
 
 .hover-box {
