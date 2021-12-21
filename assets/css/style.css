@@ -16,9 +16,9 @@ body {
 
 img {
     width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
 }
 
 h1 {
@@ -32,25 +32,22 @@ h2 {
     font-weight: 900;
 }
 
-.cursor-pointer {
-    cursor: pointer !important;
+/* ===============  first-section start  ==================== */
+
+.banner {
+    height: 100vh;
 }
 
-.text-info {
-    color: #9bc0ff !important;
+.navbar-brand img {
+    height: 5rem;
 }
 
 .text-light {
     color: #fff !important;
 }
 
-.btn {
-    font-size: 1.8rem;
-    padding: 1rem 3rem;
-}
-
-.navbar-brand img {
-    height: 5rem;
+.text-info {
+    color: #9bc0ff !important;
 }
 
 .nav-item a:not(.btn) {
@@ -61,35 +58,24 @@ h2 {
     color: #9bc0ff !important;
 }
 
-.banner {
-    height: 100vh;
+.btn {
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
 }
 
 .carousel-item img{
     width: 100%;
     height: calc(100vh - 87px); 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
 }
 
-.carousel-caption h5 {
-    font-size: 18px;
-    font-weight: 700;
-    color: #0d6efd;
-    letter-spacing: 0.5rem;
-}
+/* ===============  first-section end  ==================== */
 
-.carousel-caption p {
-    font-size: 25px;
-    font-weight: 700;
-    color: #cecece;
-    letter-spacing: 0.2rem;
-}
+
+/* ===============  second-section start  ==================== */
+
 
 .about {
-    padding: 6rem;
+    padding: 10rem 12rem;
     background-color: #002b3b;
 }
 
@@ -99,12 +85,16 @@ h2 {
 
 .accordion-button {
     background-color: #003c4d !important;
-    color: #fff !important;
 }
+
+/* ===============  second-section end  ==================== */
+
+
+/* ===============  third-section start  ==================== */
 
 .hover-box {
     display: none !important;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .hover-box .btn {
@@ -121,19 +111,26 @@ h2 {
 
 .work-item:hover .hover-box {
     display: flex !important;
+    border-radius: 10px;
 }
 
 .work__image {
     height: 40rem;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .work__image_helf {
     height: 19.5rem !important;
 }
 
+/* ===============  third-section end  ==================== */
+
+
+/* ===============  fourth-section start  ==================== */
+
 .testimonial {
-    padding-bottom: 7rem;
+    padding: 10rem 0;
 }
 
 .testimonial .img-box {
@@ -142,15 +139,13 @@ h2 {
 }
 
 .testimonial__content {
-    width: 25%;
-}
-
-.owl-carousel .active span {
-    background-color: #9bc0ff !important;
+    width: 30%;
+    color: #fff !important;
+    letter-spacing: 2px;
 }
 
 .owl-dots {
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 .owl-prev,
@@ -162,20 +157,31 @@ h2 {
 
 .owl-prev {
     left: 30%;
+    color: #fff !important;
 }
 
 .owl-next {
     right: 30%;
+    color: #fff !important;
 }
 
 .owl-prev:hover,
 .owl-next:hover {
     background-color: transparent !important;
-    color: #5392ff !important;
+    color: #3693d6 !important;
 }
 
 .owl-nav .disabled {
     display: none !important;
+}
+
+/* ===============  fourth-section end  ==================== */
+
+
+/* ===============  footer start  ==================== */
+
+footer {
+    background-color: #002b3b;  
 }
 
 .footer__logo-link img {
@@ -183,26 +189,46 @@ h2 {
     height: 5rem;
 }
 
+/* ===============  footer end  ==================== */
+
+
+/* ===============  Responsiv 992px  ==================== */
+
 @media (max-width: 992px) {
+
     html {
         font-size: 9px;
     }
+
     .navbar-brand img {
         height: 2rem;
     }
+
+    .banner {
+        height: calc(100vh - 47px);
+    }
+
     .banner__title {
         font-size: 7rem;
     }
+
     .about__text {
         width: 90%;
     }
+
+    .accordion {
+        width: 75% !important;
+    }
+
     .work__image,
     .work__image_helf {
-        height: auto !important;
+        height: 40rem !important;
     }
+
     .testimonial__content {
         width: 50%;
     }
+
     .owl-prev {
         left: 10%;
     }
@@ -210,57 +236,105 @@ h2 {
     .owl-next {
         right: 10%;
     }
-    .social-item img {
-        height: 3.5rem;
-    }
-}
 
-@media (max-width: 768px) {
-    html {
-        font-size: 8.5px;
-    }
-    .banner__title {
-        font-size: 5rem;
-        width: 50%;
-    }
-    .about__text {
-        width: 70%;
-    }
-    .testimonial__content {
-        width: 60%;
-    }
     .social-item img {
         height: 3rem;
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
+
     html {
         font-size: 8px;
+    }
+
+    .banner {
+        height: calc(80vh - 47px);
+    }
+
+    .carousel-item img{
+        width: 100%;
+        height: calc(100vh - 215px); 
+    }
+
+    .banner__title {
+        font-size: 5rem;
+        width: 50%;
+    }
+
+    .about {
+        padding: 10rem 8rem;
+    }
+
+    .about__text {
+        width: 100% !important;
+    }
+
+    .accordion {
+        width: 80% !important;
+    }
+
+    .testimonial__content {
+        width: 60%;
+    }
+
+    .social-item img {
+        height: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    html {
+        font-size: 7px;
     }
     .navbar-brand h1 {
         display: none !important;
     }
+
+    .banner {
+        height: 60vh;
+    }
+
+    .carousel-item img{
+        width: 100%;
+        height: calc(100vh - 260px); 
+    }
+
     .banner__title {
         font-size: 4rem;
         width: 100%;
     }
-    .about__text {
-        width: 50%;
+
+    .about {
+        padding: 10rem 4rem;
     }
+
+    .about__text {
+        width: 100% !important;
+    }
+
+    .accordion {
+        width: 100% !important;
+    }
+
     .work-item__wrapper p {
         display: none !important;
     }
+
     .work-item__wrapper h2 {
         margin-bottom: 3rem;
     }
+
     .testimonial__content {
         width: 90%;
     }
+
     .owl-prev,
     .owl-next {
         display: none !important;
     }
+
     .social-item img {
         height: 2.5rem;
     }
