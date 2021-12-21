@@ -293,12 +293,12 @@ footer {
     }
 
     .banner {
-        height: 60vh;
+        height: 50vh;
     }
 
     .carousel-item img{
         width: 100%;
-        height: calc(100vh - 260px); 
+        height: calc(100vh - 350px); 
     }
 
     .banner__title {
@@ -307,7 +307,7 @@ footer {
     }
 
     .about {
-        padding: 10rem 4rem;
+        padding: 12rem 4rem;
     }
 
     .about__text {
