@@ -86,10 +86,11 @@ h2 {
 
 .accordion-button {
     background-color: #003c4d !important;
+    
 }
 
 .prgress-bar {
-    background-color: #003c4d;
+    background-color: #003c4d !important;
 }
 
 /* ===============  second-section end  ==================== */
@@ -219,8 +220,8 @@ footer {
         height: 100vh;
     }
 
-    .banner__title {
-        font-size: 7rem;
+    .nav-item {
+        padding: .5rem 0;
     }
 
     .about__text {
